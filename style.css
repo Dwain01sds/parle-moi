@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0b0b0f;
+  color: #f2f2f2;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  background: #16161d;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  color: white;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.emotions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.emotion {
+  flex: 1;
+  margin: 0 4px;
+  font-size: 20px;
+  background: #1e1e28;
+  border: none;
+  border-radius: 12px;
+  padding: 8px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.emotion.active {
+  background: #6c63ff;
+  opacity: 1;
+}
+
+.tabs, .sub-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tab-btn, .sub-tab-btn {
+  flex: 1;
+  background: #1e1e28;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: #aaa;
+}
+
+.tab-btn.active, .sub-tab-btn.active {
+  background: #6c63ff;
+  color: white;
+}
+
+.no-reply {
+  display: block;
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.comfort {
+  background: #14141c;
+  border-left: 4px solid #6c63ff;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+#sendBtn {
+  width: 100%;
+  background: linear-gradient(135deg, #6c63ff, #8a84ff);
+  border: none;
+  border-radius: 14px;
+  padding: 14px;
+  color: white;
+  font-size: 16px;
+}
+
+.thankyou {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #bdbdff;
+}

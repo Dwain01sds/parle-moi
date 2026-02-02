@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace Cocoon 🌙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>🌙 Un espace pour toi</h1>
+  <p class="subtitle">Tu peux déposer ce que tu ressens, ici.</p>
+
+  <input type="text" id="name" placeholder="Ton prénom ou surnom (optionnel)">
+
+  <!-- ÉMOTIONS -->
+  <div class="emotions">
+    <button class="emotion active" data-emo="😞 Triste">😞</button>
+    <button class="emotion" data-emo="😐 Neutre">😐</button>
+    <button class="emotion" data-emo="😟 Stressé·e">😟</button>
+    <button class="emotion" data-emo="😡 En colère">😡</button>
+    <button class="emotion" data-emo="😊 Soulagé·e">😊</button>
+  </div>
+
+  <!-- ONGLET PRINCIPAL -->
+  <div class="tabs">
+    <button class="tab-btn active" data-type="Problèmes">Problèmes</button>
+    <button class="tab-btn" data-type="Juste parler">Juste parler</button>
+    <button class="tab-btn" data-type="Conseil">Conseil</button>
+    <button class="tab-btn" data-type="Rappelle-moi">Rappelle-moi</button>
+  </div>
+
+  <!-- MICRO-ONGLETS -->
+  <div class="sub-tabs">
+    <button class="sub-tab-btn active" data-cat="Famille">Famille</button>
+    <button class="sub-tab-btn" data-cat="Amis">Amis</button>
+    <button class="sub-tab-btn" data-cat="Autre">Autre</button>
+  </div>
+
+  <!-- OPTION PAS BESOIN DE RÉPONSE -->
+  <label class="no-reply">
+    <input type="checkbox" id="noReply">
+    Je n’ai pas besoin de réponse 💭
+  </label>
+
+  <!-- MESSAGE RASSURANT -->
+  <div id="comfortText" class="comfort">
+    Tu fais bien d’en parler. Je t’écoute vraiment.
+  </div>
+
+  <textarea id="message" placeholder="Écris ici, à ton rythme…"></textarea>
+
+  <button id="sendBtn">Envoyer doucement 💜</button>
+  <div id="thankyou" class="thankyou"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
